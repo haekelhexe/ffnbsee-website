@@ -1,2 +1,13 @@
 [project]
 name = Förderverein Freie Netze Bodensee
+url = https://ffnbsee.org/
+locale = de_DE
+locale = de_DE
+
+[servers.ffnbsee]
+name = ffnbsee
+url = https://ffnbsee.org/
+url_style = absolute
+enabled = yes
+default = yes
+target = rsync://web33@ffnbsee.org:/var/www/clients/client10/web33/web
