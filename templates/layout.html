@@ -12,13 +12,16 @@
         %}"{{ '/images/ffbsee.png'|asseturl }}"{% endblock %} />
   <meta name="theme-color" content="#4797ec">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href={%
-            if '/css/main.min.css'|asseturl == empty %}{%
-                if '/css/main.css'|asseturl == empty %}"https:// {{ fqdn }}/css/main.min.css"{%
-                else %}" {{ '/css/main.css'|asseturl }}"{%
-                endif %}{%
-            else %}"{{ '/css/main.min.css'|asseturl }}"{%
-            endif %} />
+  <link rel="stylesheet" href=
+    {%- if '/css/main.min.css'|asseturl == empty %}
+      {%- if '/css/main.css'|asseturl == empty -%}
+        "https:// {{ fqdn }}/css/main.min.css"
+      {%- else -%}
+        " {{ '/css/main.css'|asseturl }}"
+      {%- endif %}
+    {%- else %}
+        "{{ '/css/main.min.css'|asseturl }}"
+    {%- endif %} />
   {% block meta %}
   <script src="{{ '/js/jquery-3.3.1.min.js'|asseturl }}"></script>{% endblock %}
 </head>
@@ -30,25 +33,37 @@
 
       <nav id="nav">
         <ul>
-          <li{% if this._path == '/' %} class="current" {% endif
-                            %}><a href="{{ '/'|url }}">Start</a></li>
-            {%  for href, title in [
+          <li
+            {%- if this._path == '/' -%}
+              {# #} class="current"
+            {%- endif %}>
+            <a href="{{ '/'|url }}">Start</a>
+          </li>
+            {%- for href, title in [
                             ['/blog', 'Neuigkeiten'],
                             ['/kontakt', 'Kontakt'],
                             ['/satzung', 'Satzung']
                             ] %}
-            <li{% if this.is_child_of(href) %} class="active" {% endif %}><a href="{{ href|url }}">{{ title }}</a>
-              {% if title == 'Kontakt' %}
+          <li
+            {%- if this.is_child_of(href) -%}
+              class="active"
+            {%- endif -%}>
+            <a href="{{ href|url }}">{{ title }}</a>
+            {%- if title == 'Kontakt' %}
               <ul>
                 <li><a href="{{ '/kontakt'|url }}">Kontakt</a></li>
               </ul>
-              {% elif title == 'Neuigkeiten' %}
+            {%- elif title == 'Neuigkeiten' %}
               <ul>
                 <li><a href="{{ '/blog'|url }}">Nachrichten</a></li>
-                {% set root = site.get('/blog/', alt=this.alt) %}{%
-                                    for child in root.children recursive %}{% if loop.index <= 5 %}
-                <li{% if this._path == child._path %} class="active" {% endif
-                                         %}><a href="{{ child|url }}">Blog -> {{ child.title }}</a></li>{%
+                  {%- set root = site.get('/blog/', alt=this.alt) %}
+                  {%- for child in root.children recursive %}
+                    {%- if loop.index <= 5 %}
+                  <li
+                    {%- if this._path == child._path -%}
+                      class="active"
+                    {%- endif %}>
+                    <a href="{{ child|url }}">Blog -> {{ child.title }}</a></li>{%
                                     endif %}{%endfor %}
                   <li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li>
 
