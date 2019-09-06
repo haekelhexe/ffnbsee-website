@@ -1,0 +1,242 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+  <!-- Banner -->
+  <section id="banner">
+    <div class="content">
+      <header class="major special">
+        <h1>
+          {%- for item in this.welcome -%}
+            {{ item }}<br/>
+          {%- endfor -%}
+        </h1>
+      </header>
+      <ul class="actions special">
+        <li>
+          <a href="{{ this.head_link }}" class="button primary wide scrolly">{{ this.head }}</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section -->
+  <section class="wrapper style1" id="first">
+    <div class="inner">
+      <header class="major special">
+        <h2>{{ this.body1 }}</h2>
+        {{ this.body1m }}
+        {%- if this.body1t %}{{ '   ' -}}
+ {##}     <a href="
+            {%- if this.body1l -%}
+              {{ this.body1l }}
+            {%- else -%}
+              #
+            {%- endif -%}
+          " class="button">{{ this.body1t }}</a>
+        {%- endif -%}
+      </header>
+      {# -#}
+
+      <div class="spotlights">
+        <section>
+          <div class="image">
+            {%- if this.body2l %}
+            <a href="{{ this.body2l }}">
+            {%- endif %}
+              <img src="{{ this.body2img }}" alt="
+            {%- if this.body2t -%}
+              {{ this.body2t }}
+            {%- endif -%}
+          " />
+            {%- if this.body2l %}
+            </a>
+            {%- endif %}
+          </div>
+
+          <div class="content">
+            <header class="major">
+              <h3>{{ this.body2 }}</h3>
+            </header>
+            {{ this.body2m }}
+            {%- if this.body2b %}{{ '   ' -}}
+ {##}         <a class="button primary" href="
+                {%- if this.body2l -%}
+                  {{ this.body2l }}
+                {%- else -%}
+                  #
+                {%- endif -%}
+              ">{{ this.body2b }}</a>
+            {%- endif %}
+          </div>
+        </section>
+
+        <section>
+          <div class="image">
+          {%- if this.body3l %}
+            <a href="{{ this.body3l }}">
+          {%- endif %}
+              <img src="{{ this.body3img }}" alt="
+              {%- if this.body3t -%}
+                {{ this.body3t }}
+              {%- endif -%}
+            " />
+          {%- if this.body3l %}
+            </a>
+          {%- endif %}
+          </div>
+          <div class="content">
+            <header class="major">
+              <h3>{{ this.body3 }}</h3>
+            </header>
+            {{ this.body3m }}
+            {%- if this.body3b %}{{ '   ' -}}
+ {##}         <a class="button primary" href="
+                {%- if this.body3l -%}
+                  {{ this.body3l }}
+                {%- else -%}
+                  #
+                {%- endif -%}
+              ">{{ this.body3b }}</a>
+            {%- endif %}
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section -->
+  <section class="wrapper style2 alt">
+    <div class="inner">
+      <header class="major special">
+        <h2>{{ this.main }}</h2>
+        {{ this.mainm }}
+      </header>
+        <h2>{{ this.unten }}</h2>
+        {{ this.untenm }}
+
+      {%- if this.untenl %}
+      <ul class="actions special">
+        <li><a href="{{ this.untenl }}" class="button primary wide">{{ this.untent }}</a></li>
+       </ul>
+    {%- endif %}
+    </div>
+  </section>
+
+  <!-- Section -->
+  <section class="wrapper style1">
+    <div class="inner">
+      <div class="features">
+        <ul>
+          <li>
+            {% if this.main1l -%}
+              <a href="{{ this.main1l }}" title="{{ this.main1t }}">
+            {% endif -%}
+              <span class="icon alt major
+            {#- FONT AWESOME ICON -#}
+              {{' '}}
+            {%- if this.main1fa -%}
+              {{ this.main1fa }}
+            {%- else -%}
+              fas fa-download
+            {%- endif -%}
+                "></span>
+            {%- if this.main1l -%}
+              </a>
+            {% endif -%}
+              <h3>{{ this.main1 }}</h3>
+              {{ this.main1m }}
+            {% if this.main1l -%}
+              <a href="{{ this.main1l }}" class="button primary" style="margin-top: 10px;">{{ this.main1t }}</a>
+            {%- endif -%}
+            {% if this.main1la -%}
+              <a href="{{ this.main1la }}" class="button" style="margin-top: 10px;">{{ this.main1ta }}</a>
+            {%- endif -%}
+          </li>
+          <li>
+          {% if this.main2l -%}
+            <a href="{{ this.main2l }}" title="{{ this.main2t }}">
+          {% endif -%}
+          <span class="icon alt major
+            {#- FONT AWESOME ICON -#}
+              {{' '}}
+            {%- if this.main2fa -%}
+              {{ this.main2fa }}
+            {%- else -%}
+              fas fa-download
+            {%- endif -%}
+          "></span>
+        {%- if this.main2l -%}
+          </a>
+        {%- endif -%}
+          <h3>{{ this.main2 }}</h3>
+          {{ this.main2m }}
+        {% if this.main2l -%}
+          <a href="{{ this.main2l }}" class="button primary">{{ this.main2t }}</a>
+        {% endif -%}
+        </li>
+        </ul>
+        {% if this.mainimg -%}
+          <span class="image">
+          <img src="{{ this.mainimg }}" title="
+            {%- if this.mainimgt -%}
+              {{ this.mainimgt }}
+            {%- endif -%}
+              " /></span>
+            {%- endif -%}
+        <ul>
+          <li>
+          {% if this.mainal -%}
+            <a href="{{ this.mainal }}" title="{{ this.mainat }}">
+          {% endif -%}
+            <span class="icon alt major
+            {#- FONT AWESOME ICON -#}
+              {{' '}}
+            {%- if this.mainafa -%}
+              {{ this.mainafa }}
+            {%- else -%}
+              fas fa-download
+            {%- endif -%}
+            "></span>
+            {% if this.mainal -%}
+              </a>
+            {%- endif -%}
+              <h3>{{ this.maina }}</h3>
+              {{ this.mainam }}
+            {% if this.mainal -%}
+              <a href="{{ this.mainal }}" class="button primary" style="margin-top: 10px;">{{ this.mainat }}</a>
+            {% endif -%}
+            {%- if this.mainala %}
+              <a href="{{ this.mainala }}" class="button" style="margin-top: 10px;">{{ this.mainata }}</a>
+            {%- endif -%}
+          </li>
+          <li>
+           {%- if this.mainbl %}
+            <a href="{{ this.mainbl }}" title="{{ this.mainbt }}">
+            {% endif -%}
+            <span class="icon alt major
+            {#- FONT AWESOME ICON -#}
+              {{' '}}
+            {%- if this.mainbfa -%}
+              {{ this.mainbfa }}
+            {%- else -%}
+              fas fa-download
+            {%- endif -%}
+              "></span>
+            {% if this.mainbl -%}
+              </a>
+            {%- endif %}
+              <h3>{{ this.mainb }}</h3>
+                {{ this.mainbm }}
+              {% if this.mainbl -%}
+                <a href="{{ this.mainbl }}" class="button primary">{{ this.mainbt }}</a>
+              {%- endif %}
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+{% endblock %}
