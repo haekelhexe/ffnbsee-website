@@ -11,3 +11,6 @@ url_style = absolute
 enabled = yes
 default = yes
 target = rsync://web33@ffnbsee.org:/var/www/clients/client10/web33/web
+
+[packages]
+lektor-scsscompile = 1.2.4
