@@ -44,7 +44,7 @@
                             ['/kontakt', 'Kontakt'],
                             ['/satzung', 'Satzung']
                             ] %}
-          <li {% if this.is_child_of(href) %} class="active jhtest2" {% endif %}>
+          <li {% if this.is_child_of(href) %} class="active" {% endif %}>
             <a href="{{ href|url }}">{{ title }}</a>
             {%- if title == 'Kontakt' %}
               <ul>
@@ -56,7 +56,7 @@
                   {%- set root = site.get('/blog/', alt=this.alt) %}
                   {%- for child in root.children recursive %}
                     {%- if loop.index <= 5 %}
-                  <li {% if this._path == child._path -%} class="active jhtest1" {% endif %}>
+                  <li {% if this._path == child._path -%} class="active" {% endif %}>
                     <a href="{{ child|url }}">Blog -> {{ child.title }}</a></li>{%
                                     endif %}{%endfor %}
                   <li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li>
