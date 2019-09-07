@@ -1,0 +1,93 @@
+_model: page
+---
+title: Kontakt
+---
+subtitle: Wie erreicht man Freifunk Bodensee?
+---
+body:
+
+Es gibt viele Wege, etwas von Freifunk Bodensee (und hoffentlich bald auch direkt vom Förderverein Freie Netze Bodensee) mitzubekommen. 
+Welche genau das sind, erfährst du hier:
+
+ Mailingliste Freifunk Bodensee
+-----------------------
+
+Auf der Mailingliste werden wichtige und spannende Themen rund um Freifunk besprochen. Außerdem wird dort zu neuen Terminen wie einem lokalen Freifunk Treffen eingeladen. Außerdem werden große Neuerungen in der Firmware dort bekanntgegeben und einige Themen diskutiert, die sich in der Firmware ändern, bei denen das Firmware Team die Meinung anderer Leute berücksichtigen möchte. Außerdem ist die Mailingliste ein guter Ort, um nach Unterstützung zu Fragen. Hier wird versucht jedem weiterzuhelfen. Begonnen mit: "Wie lade ich denn die Firmware runter" bis hin zu komplexen Themen wie: "Kann mir jemand beim Aufbauen einer Richtfunkverbindung helfen" und vielen vielen Themen mehr.
+
+Um also bei Freifunk Bodensee mitzumachen ist das Abonnieren der Mailingliste und vielleicht eine freundliche "Hallo, ich möchte Mitmachen"- Email ein guter Schritt!
+
+<center>
+<a href="mailto:freifunk-bodensee@list.ffbsee.de" class="button primary">An die Mailingliste schreiben</a>
+<a href="https://list.ffbsee.de/cgi-bin/mailman/listinfo/freifunk-bodensee" class="button primary">Mailingliste Abonnieren</a>
+</center><br/>
+
+ Freifunk Chat
+-------------------------
+Als Chat bei Freifunk Bodensee verwenden wir <a href="https://de.wikipedia.org/wiki/Matrix_(Kommunikationsprotokoll)">Matrix</a>. Dort findet eine Gruppenchat-artige Kommunikation statt. So wird dort über Ideen und freifunkhaltige Ideen geredet, es werden neue Freifunk treffen geplant oder der Aufbau von Freifunk Installationen. Und natürlich wird bei Router Problemen weiter geholfen.
+
+Das Verbinden mit Matrix ist sehr einfach, sobald man sich erst mal einen Client installiert hat.
+Hierfür gibt es aber natürlich eine Anleitung.
+
+<center>
+<a href="/anleitung/matrix/" class="button">Matrix Anleitung</a>
+<a href="https://matrix.to/#/#ffbsee:matrix.bodensee.space" class="button primary">Matrix Channel</a>
+</center><br/>
+
+
+Direkter Kontakt
+--------------------------------
+Um dich direkt bei den Administratoren von Freifunk Bodensee zu melden, schau doch mal unter [Störung melden](/stoerung-melden/) nach. Dort findest du einen direkten Ansprechpartner, der dir meistens weiter helfen kann. Dennoch würden wir eine Mail an die Mailingliste bevorzugen, da dies auch anderen Menschen die Möglichkeit gibt, auf Fragen die sie selber hatten zu antworten und so Wissen zu verteilen. Außerdem entlastet das die Betreiber von Freifunk Bodensee, die das auch nur in ihrer Freizeit machen und nicht immer viel Zeit haben komplexe Nachrichten zu beantworten.
+
+<center>
+<a href="/stoerung-melden/" class="button primary">Störung melden</a>
+</center><br/>
+
+ Technik-Nerds
+------------------------
+Die Nerds bei Freifunk Bodensee treiben sich im IRC rum. 
+<blockquote>Internet Relay Chat, kurz IRC, bezeichnet ein rein textbasiertes Chat-System. Es ermöglicht Gesprächsrunden mit einer beliebigen Anzahl von Teilnehmern in so genannten Channels (Gesprächskanälen), aber auch Gespräche zwischen zwei Teilnehmern (Query).
+<br/><right><i>Quelle: <a href="https://de.wikipedia.org/wiki/Internet_Relay_Chat">Wikipedia</a></i></right>
+</blockquote>
+Dort sind wir auf dem Channel ``#ffbsee`` auf dem [Hackint](https://hackint.org) IRC Server ``irc.hackint.org``.
+
+<center>
+<a href="https://webirc.hackint.org/#irc://irc.hackint.org/#ffbsee" class="button primary">Web IRC</a>
+<a href="ircs://irc.hackint.org/#ffbsee" class="button primary">IRC</a>
+<a href="https://www.hackint.org/connect" class="button primary">Anleitung: mit dem IRC Verbinden</a>
+</center><br/>
+
+ Soziale Medien
+--------------------------------
+Selbstverständlich sind wir auch bei einigen Sozialen *(und auch etwas unsozialeren)* Medien mit dabei. Hier posten wir sehr unregelmäßig Inhalte und bekommen manchmal auch erst sehr verspätet von Direktnachrichten oder Erwähnungen etwas mit.
+
+<center>
+<a href="https://chaos.social/@FFBSee" class="button primary">Mastodon</a>
+<a href="https://twitter.com/@FFBSee" class="button primary">Twitter</a>
+<a href="https://www.facebook.com/freifunk.bodensee/" class="button primary">Facebook</a>
+</center><br/>
+
+ Forum
+---------------
+Es gibt ein großes Freifunk Forum. Auch dort sind wir mit vertreten:
+
+<center><a href="https://forum.freifunk.net/c/community/freifunk-bodensee" class="button primary">Freifunk Forum</a></center><br/>
+
+Quellcode
+-----------------
+Sowohl unsere Firmware, als auch das Setup unserer Gateways gibt es öffentlich einsehbar auf verschiedenen Plattformen:
+
+<center>
+<a href="https://github.com/ffbsee" class="button primary">Github</a>
+<a href="https://gitea.see-base.de/ffbsee" class="button primary">Github Mirror</a>
+</center><br/>
+
+ Freifunk Nodes
+-----------------------
+Bei den Routern im Freifunk Bodensee Netz, gibt es eine große Zahl an freiwilliger Angaben. Diese werden u.a. im Meshviewer und in der Nodelist dargestellt:
+Außerdem gibt es ein Grafana mit vielen bunten Graphen zu den Freifunk Routern:
+
+<center>
+<a href="https://meta.ffbsee.net/meshviewer" class="button primary">Meshviewer</a>
+<a href="https://meta.ffbsee.net/FFNodeList" class="button primary">Nodelist</a>
+<a href="https://s.ffbsee.de" class="button primary">Grafana</a>
+</center><br/>
