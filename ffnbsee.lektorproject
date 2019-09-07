@@ -14,3 +14,4 @@ target = rsync://web33@ffnbsee.org:/var/www/clients/client10/web33/web
 
 [packages]
 lektor-scsscompile = 1.2.4
+lektor-htmlmin = 1.0.2
