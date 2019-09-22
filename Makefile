@@ -1,6 +1,7 @@
 LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 # minify javascript assets, compile scss assets
-LEKTOR_PLUGIN_FLAGS=-f scsscompile
+LEKTOR_PLUGIN_FLAGS=-f scss
+LEKTOR_DEPLOY_FLAGS=-f htmlmin
 
 all: build
 
@@ -30,5 +31,5 @@ server:
 deploy:
 	lektor clean --yes
 	lektor plugin flush-cache
-	lektor build $(LEKTOR_PLUGIN_FLAGS)
-	lektor deploy $(LEKTOR_PLUGIN_FLAGS)
+	lektor build $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)
+	lektor deploy $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)
