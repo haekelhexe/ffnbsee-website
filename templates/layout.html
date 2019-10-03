@@ -15,7 +15,7 @@
   <link rel="stylesheet" href=
     {%- if '/css/main.min.css'|asseturl == empty %}
       {%- if '/css/main.css'|asseturl == empty -%}
-        "https:// {{ fqdn }}/css/main.min.css"
+        "https://{{ fqdn }}/css/main.min.css"
       {%- else -%}
         " {{ '/css/main.css'|asseturl }}"
       {%- endif %}
