@@ -39,10 +39,6 @@
 		}
 
 		> .content {
-			@include vendor('transition', (
-				'transform 1s ease-in-out',
-				'opacity 1.25s ease-in-out'
-			));
 			position: relative;
 			z-index: 1;
 
@@ -54,11 +50,6 @@
 		body.is-preload & {
 			&:before {
 				opacity: 1;
-			}
-
-			> .content {
-				@include vendor('transform', 'translateY(0.75rem)');
-				opacity: 0;
 			}
 		}
 
