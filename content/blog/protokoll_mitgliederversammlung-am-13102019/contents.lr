@@ -1,0 +1,75 @@
+title: Protokoll der Mitgliederversammlung am 13.10.2019
+---
+body:
+
+<p><strong>Protokoll der Mitgliederversammlung “Förderverein Freie Netze Bodensee e.V.”</strong>
+    <br><em>Datum: 13.10.2019, 14:00 Uhr</em></p>
+<p><em>Anwesend: </em> Wolfgang, Eike, xperimental, matt, alex, wolf, tronic, mart
+    <br><em>(Eine Liste mit entsprechenden Klartextnamen fürs amtliche Protokoll und zwecks Adressvervollständigung ging rum)</em></p>
+<p><em>Sitzungsleitung</em>: Tronic
+    <br><em>Protokoll</em>: Wolf
+    <br><em>Beschlussfähigkeit</em>: Satzungsgemäß erreicht
+    <br><em>Rahmen</em>: Öffentlich</p>
+<p><strong>Vorgeschlagene Tagesordnung:</strong></p>
+<ol>
+    <li>Eröffnung der Versammlung durch den Versammlungsleiter</li>
+    <li>Feststellung der Beschlussfähigkeit</li>
+    <li>kurzer Rückblick auf die vergangenen 6 Monate</li>
+    <li>Ausblick auf die Zukunft / geplante Projekte</li>
+    <li>Diskussion und Beschluss über die Geschäfts- u. Beitragsordnung </li>
+    <li>Sonstiges</li>
+</ol>
+<p><em>Es wurden keine weiteren Anträge zur Tagesordnung (Frist: 06.10.) eingereicht.</em></p>
+<h3 id="h2-01-er-ffnung-"><a name="01: Eröffnung:" class="reference-link"></a><span class="header-link octicon octicon-link"></span>01: Eröffnung:</h3>
+<p>Tronic begrüßt die anwesenden Mitglieder und Gäste und übernimmt die Sitzungsleitung.
+    <br>Protokollführung übernimmt Wolf</p>
+<h3 id="h2-02-beschlussf-higkeit-"><a name="02: Beschlussfähigkeit:" class="reference-link"></a><span class="header-link octicon octicon-link"></span>02: Beschlussfähigkeit:</h3>
+<p>Satzungsgemäß müssen für Beschlussfähigkeit mind. 15 % der ordentlichen Mitglieder anwesend sein.<br />Das ist erfüllt.</p>
+<h3 id="h3-03-r-ckblick"><a name="03: Rückblick" class="reference-link"></a><span class="header-link octicon octicon-link"></span>03: Rückblick</h3>
+<ul>
+    <li>Gründungsdinge wurden getan: Notartermin, Vereinsregistereintrag, Bankkonto</li>
+    <li>Unser Eintrag im Registergericht: Freiburg im Breisgau, Registernummer: VR 702556</li>
+    <li>Bankkonto: Volksbank Friedrichshafen-Tettnang; IBAN DE90 6519 1500 0234 2010 02; BIC GENODES1TET</li>
+    <li>Website wurde erstellt: ffnbsee.org</li>
+    <li>vServer angemietet (u.a. f.d. Website)</li>
+    <li>Domainlandschaftsfürsorge wurde begonnen.</li>
+    <li>Mailman3 als Backend für die Mailingliste installiert.</li>
+    <li>Ein Bündeln oder Steuern von Kommunikationskanälen jenseits von Mailinglisten war absichtlich nicht dran.</li>
+    <li>Weiterer Rückblick: Camps: Technik-Camp mit u.a. Freifunkthema, Chaos-Camp, Demoteilnahme: Artikel 13/17</li>
+    <li>Firmware: Anzahl von Personen, deren Schlüssel neue Firmware signieren können wurde erhöht.</li>
+    <li>Der Vorstand hat einen Kassenwart aus seinen Reihen bestimmt: Tronic</li>
+</ul>
+<h3 id="h3-04-ausblick-und-geplantes"><a name="04: Ausblick und Geplantes" class="reference-link"></a><span class="header-link octicon octicon-link"></span>04: Ausblick und Geplantes</h3>
+<ul>
+    <li>Überlegungen künftig Gluon einzusetzen existieren</li>
+    <li>Wie sollen künftig Prozesse aussehen? Bzw. will der Verein hier überhaupt Patterns diskutieren/vorlegen?</li>
+    <li>Wie verhalten wir uns in Schlichtungsbedarfssituationen?</li>
+    <li>Konventionen für abgesteckte Verantwortungsbereiche/Richtlinien (z.B. Backbonebetrieb, Firmware, …) sollen bis zur nächsten MV formuliert und vorgeschlagen werden.
+        <br>—<em> Dass dies getan wird, wurde <em>einstimmig</em> angenommen.</em>
+        <br>— Der Vorstand arbeitet hier stichpunktartig vor.</li>
+    <li>Ein eigenes Pad für ffnbsee.org soll installiert werden. (xperimental, bitte mit ansible-Rolle/Playbook)</li>
+    <li>Best Practise wird weitergeführt, wie bisher. Best-Practise-Prozesse können in zukünftigen Mitgliederversammlungen zur Konvention befördert werden (aka Konventionserhebung)
+        <br>—<em> Dass dies getan werden soll, wurde <em>einstimmig</em> angenommen.</li>
+    <li>Aufsetzen des Vereinsservers:
+        <br>— mart &amp; xperimental verfassen das Setup dieser Maschine in Form von Ansible-Rollen/Playbooks
+        <br>— Unterstützung ist erwünscht und ggf. durch alex gegeben.</li>
+</ul>
+<h3 id="h3-05-beitrags-und-gesch-ftsordnung"><a name="05: Beitrags- und Geschäftsordnung" class="reference-link"></a><span class="header-link octicon octicon-link"></span>05: Beitrags- und Geschäftsordnung</h3>
+<ul>
+    <li>Die Beitrags- und Geschäftsordnung wurde einstimmig (Pad-Version 2719) beschlossen (<a href="https://pad.ffbsee.de/p/Beitragsordnung/timeslider#2719">https://pad.ffbsee.de/p/Beitragsordnung/timeslider#2719</a>
+        <br><em>(Anm. Wolf: Wird auf der Website veröffentlicht)</em></li>
+    <li>Erster Einzugszeitpunkt:
+        <br>Es wird planmäßig Ende Quartal 01/2020 zum ersten Mal eingezogen.</li>
+</ul>
+<h3 id="h3-06-sonstiges"><a name="06: Sonstiges" class="reference-link"></a><span class="header-link octicon octicon-link"></span>06: Sonstiges</h3>
+<ul>
+    <li>„Beitragslücke“ fürs gelaufene 2019:
+        <br>— Spendenaufruf geplant.</li>
+    <li>Rechnungen ab jetzt bitte an den Verein richten.</li>
+</ul>
+<p><code>- Sitzung geschlossen 17:30 -</code></p>
+
+
+
+---
+pub_date: 2019-10-14
