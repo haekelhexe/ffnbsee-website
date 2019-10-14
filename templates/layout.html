@@ -22,8 +22,7 @@
     {%- else %}
         "{{ '/css/main.min.css'|asseturl }}"
     {%- endif %} />
-  {% block meta %}
-  <script src="{{ '/js/jquery-3.3.1.min.js'|asseturl }}"></script>{% endblock %}
+    <script src="{{ '/js/lib/jquery.min.js'|asseturl }}"></script>
 </head>
 
 <body class="is-preload">
@@ -86,11 +85,11 @@
   </div>
 
   <!-- Scripts -->
-  <script src="{{ '/js/jquery.dropotron.min.js'|asseturl }}"></script>
-  <script src="{{ '/js/jquery.scrollex.min.js'|asseturl }}"></script>
-  <script src="{{ '/js/jquery.scrolly.min.js'|asseturl }}"></script>
-  <script src="{{ '/js/browser.min.js'|asseturl }}"></script>
-  <script src="{{ '/js/breakpoints.min.js'|asseturl }}"></script>
+  <script src={%- if '/js/jquery.dropotron.min.js'|asseturl == empty -%} "{{ '/js/jquery.dropotron.js'|asseturl }}" {%- else -%} "{{ '/js/jquery.dropotron.min.js'|asseturl }}" {%- endif -%}></script>
+  <script src={%- if '/js/jquery.scrollex.min.js'|asseturl == empty -%} "{{ '/js/jquery.scrollex.js'|asseturl }}" {%- else -%} "{{ '/js/jquery.scrollex.min.js'|asseturl }}" {%- endif -%}></script>
+  <script src={%- if '/js/jquery.scrolly.min.js'|asseturl == empty -%} "{{ '/js/jquery.scrolly.js'|asseturl }}" {%- else -%} "{{ '/js/jquery.scrolly.min.js'|asseturl }}" {%- endif -%}></script>
+  <script src={%- if '/js/browser.min.js'|asseturl == empty -%} "{{ '/js/browser.js'|asseturl }}" {%- else -%} "{{ '/js/browser.min.js'|asseturl }}" {%- endif -%}></script>
+  <script src={%- if '/js/breakpoints.min.js'|asseturl == empty -%} "{{ '/js/breakpoints.js'|asseturl }}" {%- else -%} "{{ '/js/breakpoints.min.js'|asseturl }}" {%- endif -%}></script>
   <script src={%- if '/js/util.min.js'|asseturl == empty -%} "{{ '/js/util.js'|asseturl }}" {%- else -%} "{{ '/js/util.min.js'|asseturl }}" {%- endif -%}></script>
   <script src={%- if '/js/main.min.js'|asseturl == empty -%} "{{ '/js/main.js'|asseturl }}" {%- else -%} "{{ '/js/main.min.js'|asseturl }}" {%- endif -%}></script>
 </body>
