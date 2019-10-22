@@ -22,7 +22,9 @@
     {%- else %}
         "{{ '/css/main.min.css'|asseturl }}"
     {%- endif %} />
+    {% block meta %}
     <script src="{{ '/js/lib/jquery.min.js'|asseturl }}"></script>
+    {% endblock %} 
 </head>
 
 <body class="is-preload">
