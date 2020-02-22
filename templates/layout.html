@@ -43,7 +43,7 @@
             {%- for href, title in [
                             ['/blog', 'Neuigkeiten'],
                             ['/kontakt', 'Kontakt'],
-                            ['/satzung', 'Satzung']
+                            ['/verein', 'Verein']
                             ] %}
           <li {% if this.is_child_of(href) %} class="active" {% endif %}>
             <a href="{{ href|url }}">{{ title }}</a>
@@ -62,10 +62,9 @@
                     {%-endif %}{%endfor %}
                   <li><a href="{{ '/feed.xml'|url }}">RSS Feed</a></li>
               </ul>
-              {%- elif title == 'Satzung' %}
+              {%- elif title == 'Verein' %}
               <ul>
-                <li><a href="{{ '/satzung'|url }}">Satzung</a></li>
-                {%- set root = site.get('/satzung/', alt=this.alt) %}
+                {%- set root = site.get('/verein/', alt=this.alt) %}
                 {%- for child in root.children recursive %}
                   {%- if loop.index <= 5 %}
                   <li {% if this._path == child._path -%} class="active" {% endif %}>
