@@ -63,6 +63,7 @@
               </ul>
               {%- elif title == 'Verein' %}
               <ul>
+                <li><a href="{{ '/mitglied-werden' | url}}">Mitglied werden</a></li>
                 {%- set root = site.get('/verein/', alt=this.alt) %}
                 {%- for child in root.children recursive %}
                   {%- if loop.index <= 5 %}
