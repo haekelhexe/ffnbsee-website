@@ -1,9 +1,15 @@
 _model: start
 ---
-title: Förderverein Freie Netze Bodensee e.V.
+title:
+
+Förderverein Freie Netze Bodensee e.V. 
 ---
-body: Wilkommen bei unserem Verein am Bodensee mit dem Ziel lokale Freie Netze wie Beispielsweise [Freifunk Bodensee](https://ffbsee.net) zu fördern, aufzubauen, zu stärken und mit zu entwickeln.
+welcome:
+
+Förderverein Freie Netze Bodensee e.V.
+Wir unterstützen Freifunk u.Ä.
+
 ---
-body1: 
+head: Mitglied werden
 ---
-welcome: O O
+head_link: mitglied-werden
